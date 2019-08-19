@@ -1,7 +1,6 @@
 /* Mobile First Layout */
-
-
 body {
+  font-family: 'Livvic', sans-serif;
   padding:0;
   align-content: center;
   margin: auto;
@@ -13,22 +12,43 @@ a {
 }
 ul {
   padding: 0;
-
 }
 
 h2{
   color: Green;
   align-self: center;
 }
+.sec-nav  {
+    display:none;
+  }
 
+.bda {
+      float:right;
+    }
+.bclass {
+        float:left;
+      }
+.alt-nav  {
+  overflow: auto;
+  background-color: rgb(240, 240, 240);
+  padding-left: 0;
+  }
+
+.alt-nav li {
+  min-height: 2em;
+  margin-bottom: .3em;
+  vertical-align: middle;
+  border-width: 2px;
+  padding: 5px 5px 5px 5px;
+  min-width: 100px;
+  display:inline;
+  text-decoration-color: black;
+  }
 .main-nav  {
     overflow: auto;
 background-color: rgb(240, 240, 240);
 padding-left: 0;
 }
-
-
-
 .main-nav li {
   min-height: 2em;
   margin-bottom: .3em;
@@ -41,14 +61,11 @@ padding-left: 0;
   text-decoration-color: black;
 }
 
-
-
 header{
   background-color: rgb(240, 240, 240);
     overflow: auto;
 
 }
-
 header .profile-image {
   width: 200px;
   height: 200px;
@@ -88,16 +105,13 @@ header .profile-image {
 .punches{
   margin: auto;
   text-align: center;
-
 }
-
 .final {
     margin: auto;
     text-align: center;
     padding-top:.25rem;
     padding-bottom:.25rem;
       background-color: rgb(240, 240, 240);
-
 }
 .contact {
   font-weight: bold;
@@ -105,20 +119,14 @@ header .profile-image {
 .marketing {
     object-fit:fill;
     max-width: 90%;
-
 }
 
 footer {
     padding: 15px;
-
+    background-color: rgb(240, 240, 240);
 }
 
-
-
-
 @media (min-width: 768px) {
-
-
 .profile {
   float:right;
     width:50%;
@@ -138,8 +146,6 @@ footer {
   float:left;
   width: 50%;
   align-content: center;
-
-
 }
 .secondary {
   float:right;
@@ -149,23 +155,40 @@ footer {
 .main-nav{
   align-items: center;
 }
-
-.main-nav li {
-
-  display:inline-block;
 }
 
-.da {
-  float:right
+@media (min-width: 1024px) {
+
+.alt-nav{
+  display:none;
 }
 
-.class{
-  float:left;
-}
+.sec-nav  {
+  display: contents;
+  overflow: auto;
+  background-color: rgb(240, 240, 240);
+  padding-left: 0;
+  }
 
-}
+  .sec-nav li {
+    min-height: 2em;
+    margin-bottom: .3em;
+    vertical-align: middle;
+    border-width: 2px;
+    text-align:center;
+    padding: 5px 5px 5px 5px;
+    min-width: 100px;
+    display:block;
+    text-decoration-color: black;
+    display:inline-block;
+  }
+  .da {
+    float:right
+  }
+  .main-nav li {
 
-@media (min-width: 1025px) {
+    display:inline-block;
+  }
 
   body {
     max-width: 1200px;
@@ -188,11 +211,5 @@ padding-left:2.5%;
     width: 30%;
    padding-left:2.5%;
       padding-right:2.5%;
-
-
   }
-
-
-
-
 }
